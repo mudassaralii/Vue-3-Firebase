@@ -1,0 +1,27 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vue</title>
+    <script src="https://unpkg.com/vue@3.0.2/dist/vue.global.js"></script>
+    <style>
+      .box {
+        margin: 0 auto;
+        width: 30%;
+        height: 30%;
+        background-color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>hello vue</h1>
+    <div id="app">
+      <h2>{{title}} - {{age}}</h2>
+      <button v-on:click="age++">Increment</button>
+      <div @click="changeTitle('updated title')">Click to change title</div>
+      <div class="box" @mousemove="handleMouseMove">position - {{x}} {{y}}</div>
+    </div>
+
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
